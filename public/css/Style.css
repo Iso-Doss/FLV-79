@@ -7,11 +7,30 @@ and open the template in the editor.
     Created on : 11 oct. 2016, 11:24:28
     Author     : Agence Karth
 */
+
 body { 
     background-color:#DDD;
-    margin-top: 20px;
+    margin-top: 0px;
     padding-top: 10px;
 }
+
+#main{
+
+max-width:1280px;
+
+min-height:100%;
+
+margin:0 auto;
+
+position:relative;
+
+}
+
+body,html
+{
+    height: 100%;
+}
+
 #bodyformateurs
 {
     margin-top: 70px;
@@ -22,12 +41,14 @@ body {
     width: 100%;
     height: 410px;
 }
+
 #clignote
 {
 
     font-size: 20px;
     color: red;
 }
+
 #requis
 {
     color: red;
@@ -42,6 +63,7 @@ body {
 {
     color: red;
 }
+
 [class*="col-"] 
 { 
     margin-bottom: 20px;
@@ -52,10 +74,12 @@ img
     width: 100%; 
     height: 100px;
 }
+
 .well {
     background-color:#CCC;
     padding: 20px;
 }
+
 a:active, a:focus { outline:none; }
 .inline-form input {
     display: inline-block;
@@ -72,3 +96,15 @@ carousel-inner img
     margin-top: 50px;
 }
 
+#footer
+{
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+
+    padding-top:5px;
+
+    height:100px;
+}

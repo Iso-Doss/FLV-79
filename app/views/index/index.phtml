@@ -270,9 +270,9 @@
             <section class="row" id="noscours">
                 <h1>Quelques Cours</h1>
                 <div class="col-xs-6 col-sm-6 col-md-3 ">
-                    <a href="#" class="thumbnail">
+                    <a href="<?= $this->url->get('php/index'); ?>" class="thumbnail">
                         <img src="<?php $base; ?> public/img/4.png" alt="slide" class="img-rounded">
-                        <p>Top Python Courses</p>
+                        <p>PHP</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-3 ">
@@ -319,7 +319,7 @@
                 </div>
             </section>
             <div id="DivClignotante" style="visibility:visible;" class="col-lg-offset-10">
-                <a id="clignote" href="noscours.php">Voir plus...</a>
+                <a id="clignote" href="<?= $this->url->get('noscours/index'); ?>">Voir plus...</a>
             </div>
 
         </div>
