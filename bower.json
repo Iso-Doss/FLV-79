@@ -1,5 +1,5 @@
 {
-  "name": "Fvl",
+  "name": "fvl_video.79",
   "version": "1.0.0",
   "main": "path/to/main.css",
   "ignore": [
@@ -7,7 +7,8 @@
     "**/*.txt"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
   },
   "devDependencies": {}
 }
