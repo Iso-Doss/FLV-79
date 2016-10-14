@@ -1,0 +1,13 @@
+{
+    "name": "vendor/flv79iso",
+    "description": "formation video en ligne",
+    "authors": [
+        {
+            "name": "giovanni",
+            "email": "affogbologiovanni@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^4.8"
+    }
+}
