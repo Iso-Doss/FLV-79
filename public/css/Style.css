@@ -1,28 +1,28 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 11 oct. 2016, 11:24:28
-    Author     : Agence Karth
-*/
+
 
 body { 
     background-color:#DDD;
     margin-top: 0px;
     padding-top: 10px;
 }
-
+a:focus 
+{ 
+    outline:0; 
+}
+a:active, a:focus { outline:none; }
+.inline-form input {
+    display: inline-block;
+    width: 100px;
+}
 #main{
 
-max-width:1280px;
+    max-width:1280px;
 
-min-height:100%;
+    min-height:100%;
 
-margin:0 auto;
+    margin:0 auto;
 
-position:relative;
+    position:relative;
 
 }
 
@@ -38,10 +38,18 @@ body,html
 
 #imageformateur
 {
-    width: 100%;
-    height: 410px;
+    width: 400px;;
+    height: 200px;
+    padding-left: 100px;
+    padding-right: 100px; 
+    margin-top: 40px;
 }
 
+#photoprofilenseignant
+{
+    height: 200px;
+    width: 100%;
+}
 #clignote
 {
 
@@ -86,12 +94,18 @@ a:active, a:focus { outline:none; }
     width: 100px;
 }
 
-carousel-inner img
+
+#image
 {
     width: 100%;
-    height: 100px;
+    height: 450px;
 }
 
+#slider
+{
+    width: 80%;
+    /*    height: 500px;*/
+}
 .content{
     margin-top: 50px;
 }
@@ -100,6 +114,7 @@ carousel-inner img
 {
     position:absolute;
 
+
     bottom:0;
 
     width:100%;
@@ -107,4 +122,64 @@ carousel-inner img
     padding-top:5px;
 
     height:100px;
+
+
 }
+
+#footer1
+{
+    position:relative;
+
+    margin-top: 0px;
+
+    bottom:0;
+
+    width:100%;
+
+    padding-top:5px;
+
+    height:100px;
+
+
+}
+
+/*code css espace formateurs*/
+
+#gauche
+{
+    margin-top: 55px;
+    background-color: skyblue;
+    height: 400px;
+}
+
+#photogauche
+{
+    margin-top: -80px;
+    height: 150px;
+    width: 150px;;
+    padding-left: 100px;
+    padding-right: 100px; 
+}
+#milieu
+{
+    margin-top: 55px;
+    /*    background-color: grey;*/
+    height: 600px;
+
+}
+
+#droite
+{
+    margin-top: 180px;
+    background-color: grey;
+    height: 315px;
+
+}
+
+#imageespaceformateur
+{
+    width: 150px;
+    height: 150px;
+    margin-left: -40px;
+}
+

@@ -1,0 +1,27 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" style="back">
+
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="<?= $this->url->get(''); ?>">FLV#79</a></li>
+        <li><a href="#page-top"></a></li>
+        <li><a href="<?= $this->url->get('formations/list'); ?>">Cours</a></li>
+        <li><a href="<?= $this->url->get('utilisateurs/formateurs'); ?>">Formateurs</a></li>
+    </ul>
+    <form class="navbar-form navbar-right inline-form">
+        <div class="form-group">
+            <div class="btn-group"> 
+                <li><a class="btn btn-primary" href="<?= $this->url->get('formations/ajout'); ?>">Devenir Formateurs</a></li>
+            </div>
+            <div class="btn-group"> 
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class=" glyphicon glyphicon-user"></span>Mon compte<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a data-backdrop="false" href="<?= $this->url->get("utilisateurs/profilutilisateurs") ?>"><span class="glyphicon glyphicon-user"></span>Compte</a></li>
+                    <li class="divider"></li>
+                    <li><a data-backdrop="false" href="<?= $this->url->get("index/loggout") ?>"><span class="glyphicon glyphicon-log-out"></span>D&eacute;connexion</a></li>
+                </ul>
+            </div>
+            <input type="search" class="input-sm form-control" placeholder="Recherche">
+            <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span>Chercher</button>
+        </div>
+    </form>
+
+</nav>

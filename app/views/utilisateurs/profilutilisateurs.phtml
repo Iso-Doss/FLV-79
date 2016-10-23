@@ -1,0 +1,188 @@
+
+
+<div class="row" style="margin-top: 100px;">
+    <section class="col-sm-12">
+
+        <nav class="navbar">
+
+            <ul class="nav navbar-nav">
+                <li><a href="#page-top"></a></li>
+                <li class="active"><a href="#profil" data-toggle="tab">Profil</a></li>
+                <li><a href="#photo" data-toggle="tab">Photo</a></li>
+                <li><a href="#tableaudebord" data-toggle="tab">Tableau de Bord</a></li>
+                <li><a href="#parametres" data-toggle="tab">Paramètres</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="tab-content">
+
+            <div class="tab-pane active fade in" id="profil">
+                <form class="well" role="form">
+                    <div>
+                        <h2 class="text-left col-md-1">Profil</h2>
+                        <div id="photogauche" class="col-md-offset-9  col-md-3 img-circle">
+                            <img id="imageespaceformateur" src="<?= $this->url->getBaseUri(); ?>public/img/2.png" alt="" class="img-circle">
+                        </div>
+                    </div>
+                    <form action="" method="Post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name ="nom" id="nom" placeholder="Nom">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name ="prenom" id="prenom" placeholder="Prénom(s)">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success ">Modifier</button><br><br>
+                        </div>
+                    </form>
+                </form>  
+            </div>
+
+            <div class="tab-pane fade" id="photo">
+                <div class="well">
+                    <h3>PHOTO</h3>
+                    <h4>Ajouter une photo de vous pour votre profil</h4>
+                    <p>Aperçu de l'image</p>
+                    <div class="row">
+                        <img class="col-md-4" alt="avatar" src="<?= $this->url->getBaseUri(); ?>public/img/avatar.PNG"/>
+                    </div>
+                    <p>Ajouter/Modifier une image:</p>
+                    <form action="" method="post">
+                        <input type="file" name="avatar"/>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success ">Sauvegarder</button><br><br>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="tableaudebord">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="active"><a href="#mescours" data-toggle="tab">Mes cours</a></li>
+                    <li><a href="#mescertificats" data-toggle="tab">Mes certificats</a></li>
+                </ul>
+                <div class="tab-content">
+
+                    <div class="tab-pane active fade in" id="mescours">
+                        <form class="well" role="form">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Cours</th>
+                                        <th>Description</th>
+                                        <th>Progression</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>PHP</td>
+                                        <td>cours enrichi php</td>
+                                        <td>60%</td>
+                                        <td><a href="<?= $this->url->get('formations/description'); ?>">continuer</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HTML</td>
+                                        <td>cours enrichi html</td>
+                                        <td>60%</td>
+                                        <td><a href="<?= $this->url->get('formations/description'); ?>">continuer</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>CSS</td>
+                                        <td>cours enrichi css</td>
+                                        <td>60%</td>
+                                        <td><a href="<?= $this->url->get('formations/description'); ?>">continuer</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>  
+
+                    </div>
+
+                    <div class="tab-pane fade" id="mescertificats">
+                        <form class="well" role="form">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Cours</th>
+                                        <th>Date de délivrance</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>PHP</td>
+                                        <td>cours enrichi php</td>
+                                        <td><a href="">Afficher en PDF</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HTML</td>
+                                        <td>cours enrichi html</td>
+                                        <td><a href="">Afficher en PDF</a></td>                                    
+                                    </tr>
+                                    <tr>
+                                        <td>CSS</td>
+                                        <td>cours enrichi css</td>
+                                        <td><a href="">Afficher en PDF</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>                   
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="tab-pane fade" id="parametres">
+                <div class="well">
+                    <h3>PARAMETRE</h3>
+                    <div class="modal-body">
+                        <form action="" method="post">
+                            <label class="label">Mail:</label>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name ="nom" id="mail" placeholder="Votre addresse e-mail actuel est:'' ">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success ">Sauvegarder</button><br><br>
+                            </div>
+                        </form>
+
+                        </form>
+
+                        <form action="" method="post">
+                            <label class="label">Mot de passe:</label>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name ="nom" id="nom" placeholder="Ancien mot de passe">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name ="nom" id="nom" placeholder="Nouveau mot de passe">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name ="nom" id="nom" placeholder="Retapez Nouveau mot de passe">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success ">Sauvegarder</button><br><br>
+                            </div>
+                        </form>
+                        <h1>Paramètres compte</h1>  
+                        <div class="text-center">
+                            <button class="btn btn-danger" href="<?= $this->url->get(''); ?>">Supprimer mon compte</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+
