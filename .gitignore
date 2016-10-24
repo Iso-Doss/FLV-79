@@ -1,3 +1,7 @@
 /public/vendor/
 /public/files
 /public/img
+/public/files/
+/public/img/
+/.git/
+/.phalcon/
