@@ -6,7 +6,7 @@ return new \Phalcon\Config(array(
         'host'        => 'localhost',
         'username'    => 'root',
         'password'    => '',
-        'dbname'      => 'flv79',
+        'dbname'      => 'fvl79',
     ),
     'application' => array(
         'controllersDir' => __DIR__ . '/../../app/controllers/',
@@ -15,6 +15,6 @@ return new \Phalcon\Config(array(
         'pluginsDir'     => __DIR__ . '/../../app/plugins/',
         'libraryDir'     => __DIR__ . '/../../app/library/',
         'cacheDir'       => __DIR__ . '/../../app/cache/',
-        'baseUri'        => 'http://localhost/FLV79/',
+        'baseUri'        => 'http://localhost/FVL79/',
     )
 ));

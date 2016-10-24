@@ -2,7 +2,7 @@
     <div class="col-md-12 center-block" id="droite">
         <h2>Créer une formation</h2>
         <div>
-            <form action="">
+            <form action="ajout" method="POST">
                 <div class="form-group">
                     <input type="text" class="form-control" name ="libelle_formation" id="libelle_formation" placeholder="Libellé Formation">
                 </div>
@@ -11,9 +11,6 @@
                 </div>
                 <div class="form-group">
                     <input type="number" class="form-control" name ="cout_formation" id="cout_formation" placeholder="Cout Formation">
-                </div>
-                <div class="form-group">
-                    <input type="file" class="form-control" name ="qualification_formation" id="qualification_formation" placeholder="Qualification">
                 </div>
                 <div class="text-center">
                     <button type="submit" class="btn btn-success ">Créer</button>
