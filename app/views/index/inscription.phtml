@@ -1,0 +1,57 @@
+<div class="container">
+
+
+    <div class="page-header">
+        <h2>Inscrivez-vous</h2>
+    </div>
+
+    <form action="" method="post">
+        <fieldset>
+
+            <div class="control-group">
+                <label for="name" class="control-label">Nom</label>            
+                <div class="controls">
+                    <input type="text" id="name" name="name" class="form-control" />                
+                    <p class="help-block">(required)</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="username" class="control-label">Prénom(s)</label>            
+                <div class="controls">
+                    <input type="text" id="username" name="username" class="form-control" />                
+                    <p class="help-block">(required)</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="email" class="control-label">E-Mail</label>           
+                <div class="controls">
+                    <input type="text" id="email" name="email" class="form-control" />                
+                    <p class="help-block">(required)</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="password" class="control-label">Password</label>           
+                <div class="controls">
+                    <input type="password" id="password" name="password" class="form-control" />      
+                    <p class="help-block">(minimum 8 characters)</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="repeatPassword">Repeat Password</label>
+                <div class="controls">
+                    <input type="password" id="repeatPassword" name="repeatPassword" class="form-control" />        
+                </div>
+            </div>
+            <br>
+            <div class="form-actions">
+                <input type="submit" value="Soumettre" class="btn btn-primary" onclick="return SignUp.validate();" />           
+                <p class="help-block">En vous inscrivant, vous acceptez les conditions d'utilisation et politique de confidentialité.</p>
+            </div>
+
+        </fieldset>
+    </form>
+</div>

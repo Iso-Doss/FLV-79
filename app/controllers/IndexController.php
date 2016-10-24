@@ -24,8 +24,8 @@ class IndexController extends BaseController {
     
     public function loginAction() {
 
-        $username = trim($this->request->getPost('username', 'string'));
-        $password = trim($this->request->getPost('secret', 'string'));
+        $username = trim($this->request->getPost('email', 'string'));
+        $password = trim($this->request->getPost('password', 'string'));
         //die(print_r($_POST));
         if (empty($username) || empty($password)) {
             return $this->response->redirect($this->url->get(""));                  
@@ -42,4 +42,11 @@ class IndexController extends BaseController {
         return $this->response->redirect($this->url->getBaseUri());
     }
 
+    public function connexionAction() {
+        
+    }
+    
+    public function inscriptionAction() {
+        
+    }
 }
